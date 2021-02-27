@@ -1,3 +1,15 @@
+const calcAvg = (firstScore, secondScore, thirdScore) => {
+    return ((firstScore + secondScore + thirdScore) / 3);
+}
+
+const checkWinner = function (avgDolphins, avgKoalas) {
+    if (avgDolphins > avgKoalas) {
+        return console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+    } else if (avgKoalas > avgDolphins) {
+        return console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
+    }
+}
+
 const firstScoreKoala = Number(prompt('Enter 1st Koala score'));
 const secondScoreKoala = Number(prompt('Enter 2nd Koala score'));
 const thirdScoreKoala = Number(prompt('Enter 3rd Koala score'));
